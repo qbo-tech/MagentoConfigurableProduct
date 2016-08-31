@@ -24,12 +24,17 @@ composer update
 php bin/magento module:enable JanSoft_ConfigurableProduct
 ```
 
-### Step 4. Generate DI configuration
+### Step 4 Upgrade the Magento application
+```
+php bin/magento setup:upgrade
+```
+
+### Step 5. Generate DI configuration
 ```
 php bin/magento setup:di:compile
 ```
 
-### Step 5. Clear cache
+### Step 6. Clear cache
 ```
 php bin/magento cache:flush
 ```
