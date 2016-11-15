@@ -18,8 +18,7 @@ class Data extends \Magento\ConfigurableProduct\Helper\Data
             $productId = $product->getId();
 
             $product = $objectManager->get('Magento\Catalog\Model\Product')->load($productId);
-            $stockitem = $stockRegistry->getStockItem($product->getId(), $product->getStore()->getWebsiteId());
-            if($stockitem->getQty() == 0) continue;
+            if($product->isSaleable() == false) continue;
 
             $images = $this->getGalleryImages($product);
             if ($images) {
