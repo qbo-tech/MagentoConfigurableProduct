@@ -16,13 +16,14 @@
  * MDDDDDDDDDDDDDDDDDDDDDDDDDDDDDN.IDDDDDDDDDDDDDDDDDDDDDDDDDMM
  * MMDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDMMM
  *
- * @author Jose Castaneda <jose@qbo.tech>
+ * @author José Castañeda <jose@qbo.tech>
  * @category Qbo
- * @package Qbo\ProductSwatches\
- * @copyright  qbo (http://www.qbo.tech)
+ * @package Qbo\ConfigurableProduct\
+ * @copyright qbo (http://www.qbo.tech)
  * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * 
- * © 2016 QBO DIGITAL SOLUTIONS. 
+ * © 2017 QBO DIGITAL SOLUTIONS. 
+ *
  */
 
 namespace Qbo\ConfigurableProduct\Plugin;
