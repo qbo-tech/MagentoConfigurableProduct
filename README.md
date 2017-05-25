@@ -2,26 +2,12 @@
 
 ### Step 1. Add module to the composer.json
 ```
-"mjankiewicz/configurableproduct": "dev-master"
+composer require qbo/module-configurableproduct
 ```
 
-Example:
+### Step 2. Enable the module:
 ```
-"require": {
-    "magento/product-community-edition": "2.1.0",
-    "composer/composer": "@alpha",
-    "mjankiewicz/configurableproduct": "dev-master"
-}
-```
-
-### Step 2. Update composer
-```
-composer update
-```
-
-### Step 3. Enable the module:
-```
-php bin/magento module:enable JanSoft_ConfigurableProduct
+php bin/magento module:enable Qbo_ConfigurableProduct
 ```
 
 ### Step 4 Upgrade the Magento application
@@ -36,5 +22,5 @@ php bin/magento setup:di:compile
 
 ### Step 6. Clear cache
 ```
-php bin/magento cache:flush
+php bin/magento cache:clean
 ```
