@@ -39,11 +39,23 @@ class Data extends \Magento\ConfigurableProduct\Helper\Data
      */
     protected $_stockRegistry;
 
-    public function __construct(Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry)
+    /**
+     * Constructor
+     * 
+     * @param \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry
+     */
+    public function __construct(\Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry)
     {
         $this->_stockRegistry = $stockRegistry;
     }
 
+    /**
+     * Check if product is in stock
+     * 
+     * @param type $currentProduct
+     * @param type $allowedProducts
+     * @return type
+     */
     public function getOptions($currentProduct, $allowedProducts)
     {
         $options = [];

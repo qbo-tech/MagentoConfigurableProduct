@@ -42,9 +42,9 @@ class Configurable extends \Magento\ConfigurableProduct\Block\Product\View\Type\
     )
     {
         $subject->catalogProduct->setSkipSaleableCheck(true);
-        $this->_subject = $subject;
         $resultConfig = $proceed();
-        return $this->jsonEncoder->encode($resultConfig);
+
+        return $resultConfig;
     }
 
 }
